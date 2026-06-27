@@ -75,46 +75,102 @@ document.querySelectorAll('.back-btn').forEach(btn =>
 
 const physicalArt = [
   {
-    type: 'placeholder',
-    title: 'Artwork Title',
-    year: '2024',
-    statement: 'Replace this with your artist statement for this piece. Click the plaque to expand.'
+    type: 'image',
+    src: 'portfolio/physical/untitled_and_unfinished.jpg',
+    title: 'Untitled and Unfinished',
+    year: '2018',
+    medium: 'Graphite, charcoal, color pencil, chalk pastel, oil pastel, and acrylic on drawing paper',
+    dimensions: '9 × 9.5 in',
+    statement: '<i>Untitled and Unfinished</i> began as a realistic portrait of British singer and songwriter FKA Twigs, realistically rendered in graphite and charcoal from a photograph by David Burton. Drawn to her otherworldly aesthetic and the visual power of the reference image, the work was conceived as an exercise in likeness. The single Phalaenopsis orchid, rendered in color pencil, served as the sole departure from an otherwise monochromatic composition. That is until the piece turned into a study of color and medium, in which the artist opted for a vivid blue chalk pastel to serve as the background. Purple and pink chalk pastel were dusted onto her cheeks as blush to match the orchid in hand. White acrylic paint and oil pastel were used to add highlights on the flower and the subject, respectively. Yet the piece remained incomplete. The undrawn braid and unfinished ponytail became details deferred, and eventually released. Years later, rather than returning to finish what was left, yellow chalk pastel was added to the open, unrendered areas of the composition, allowing the work to feel whole without pretending to be complete.'
   },
-  {
-    type: 'placeholder',
-    title: 'Artwork Title',
-    year: '2023',
-    statement: 'Artist statement for your second piece goes here.'
-  },
-  {
-    type: 'placeholder',
-    title: 'Artwork Title',
-    year: '2023',
-    statement: 'Artist statement for your third piece goes here.'
-  },
-  /* Example when you have files ready:
   {
     type: 'image',
-    src: 'art/painting1.jpg',
-    title: 'Untitled I',
-    year: '2024',
-    statement: 'This piece explores...'
+    src: 'portfolio/physical/womanhood.jpg',
+    title: 'Womanhood',
+    year: '2022',
+    medium: 'Watercolor on canvas paper',
+    dimensions: '9 × 12 in',
+    statement: '<i>Womanhood</i> depicts a nude figure levitating at the center of the composition, face tilted skyward, limbs loosely hinged, neither falling nor fully ascending. From the body, concentric lines radiate outward in warm earth tones and muted reds, simultaneously evoking an aura, a topographic contour, and the reverberation of sound through a medium. The figure is not a specific woman but an archetype: a generalized feminine form that carries within it the fullness of embodied experience—physical, energetic, and spiritual at once. By refusing individuation or corporeal specificity, the work positions the abstracted female nude as a universal representation of femininity. The feminine body as a site of active emanation. A source of energy whose interiority visibly shapes the space around it.'
   },
-  */
+  {
+    type: 'image',
+    src: 'portfolio/physical/sad_self_portrait.jpg',
+    title: 'Sad Self-Portrait',
+    year: '2022',
+    medium: 'Watercolor on canvas paper',
+    dimensions: '9 × 12 in',
+    statement: 'Painted during a period of intense depression, <i>Sad Self-Portrait</i> resists the impulse toward resolution or catharsis. The artist is depicted in three-quarter view, eyes red and puffy, cheek resting heavily in hand, gaze lowered and inward—a posture that speaks less of rest than of the particular exhaustion associated with carrying some emotional weight. The swirling blue arabesque patterns that populate the background were not planned. They emerged from the compulsive need to keep painting after the portrait itself was complete, to fill the silence that the face alone could not. In this way, the background is not decorative but symptomatic; the visible overflow of an interior noise that could not be contained within the mind. The work documents not only the appearance of depression but its movement, specifically the way it continues to flow when everything else has stopped.'
+  },
+  {
+    type: 'image',
+    src: 'portfolio/physical/green.jpg',
+    title: 'Green',
+    year: '2024',
+    medium: 'Marker on drawing paper',
+    dimensions: '11 × 14 in',
+    statement: '<i>Green</i> interrogates the conventions of portraiture by refusing its completeness. The face is rendered as a discrete collection of floating features—brows, nostrils, lips, ears—each legible in isolation although structurally estranged from one another. Freed from the obligation of likeness, the drawing asks what portraiture actually requires: recognition, explicit detail, or merely the suggestion of a subject. The figure is entirely invented from the artist’s imagination, yet the face reads as particular. An uncanny effect that exposes how readily the viewer assembles selfhood from fragmentary information. The colors within the portrait transition from black through various shades of green. Is the subject green with tranquility? Green with jealousy? Green with naivety? The vagueness of the figure’s facial structure attributes to the wide variety of interpretations that can be gleaned from its appearance. In these ways, the work turns the act of perceiving back on itself, implicating the eye of the viewer in the construction of identity.'
+  },
+  {
+    type: 'image',
+    src: 'portfolio/physical/quentin_torpedo_presents_bang.jpg',
+    title: 'Quentin Torpedo Presents: BANG!',
+    year: '2025',
+    medium: 'Acrylic on canvas',
+    dimensions: '5 × 7 in',
+    statement: '<i>BANG!</i>, for short, began as a formal paint study before surrendering to its own subject matter. Appropriating the visual language of exploitation cinema—specifically the violently hypersexualized aesthetic that defines much of Quentin Tarantino’s filmography—the work condenses that tradition into a more intimate field of view. The inverted contextual onomatopoeia, the matching bullet and seductive passenger, the disembodied hand reaching into the disembodied vulva, the siren licking the lollipop enticingly, and the vague hanged man all function as cinematic stills collapsed into a single frame. The viewer is engrossed in the voyeuristic nature that the genre both offers and critiques. At miniature scale, the grandiosity of exploitation is made absurd, and its graphic lewdness operates as compositional choice rather than necessity.'
+  },
+  {
+    type: 'image',
+    src: 'portfolio/physical/9.jpg',
+    title: '9',
+    year: '2025',
+    medium: 'Acrylic on canvas',
+    dimensions: '16 × 20 in',
+    statement: '<i>9</i> is a figurative address of an imaginary rowhome rendered with architectural precision and narrative density—the brick facade acting as an overlaying surface to the complexity found inside. It belongs to Baltimore Ave, Maryland 21222, a multi-sensory series documenting life in a historically Black neighborhood through interconnected paintings, poems, and projected sound installation. Each panel in the series functions as a different viewpoint of the block—domestic windows transform into frames-within-frames, showcasing miniature worlds. The characters in this frame are a man sitting somberly on a porch with his guitar, and a woman peering longingly at him from the window of that same home. The golden house light glows upon the man, somehow casting him in a blue light. Through the window of the home next door, you can see a kitchen with its checkered backsplash and matching clock, dark wood cabinets, and dated white refrigerator. Looking closely at the refrigerator door, you can see a ripped family portrait, a downturned smiley face sticker, and magnets that spell “# … DAD”. Each of these details unfurls the tangled visual narrative of a broken home with our sad guitarist, and his neighboring mistress, at the helm. The accompanying song, “Inner City Blues” by Marvin Gaye, and the eponymous, nine-verse poem below finalize the threshold crossing between interior life and neighborhood space.'
+  },
+  {
+    type: 'image',
+    src: 'portfolio/physical/reflections.jpg',
+    title: 'Reflections',
+    year: '2026',
+    medium: 'Acrylic on canvas',
+    dimensions: '6 × 6 in',
+    statement: '<i>Reflections</i> was painted outdoors, in the backyard of the family home that the artist had reluctantly returned to after five years of living independently, and four years of pursuing former dreams of higher academia. What began as a peaceful and atmospheric seascape became something more personal—a visual reckoning with a chapter closing before it felt ready to close. The composition is divided between a smooth, expansive sky and a turbulent, heavily textured sea. Three clouds gather around the sun while below, a small burst of gold light floats on the churning waters. The title works on both planes simultaneously. The water mirrors the sky. The painting mirrors a moment of meditation. These reflections highlight the emotional core of the piece. A beacon of hope emanating in a single point of light. Faith breaking through the depths below. And surrender in the midst of uncertainty. To reflect is to look back and trust that every part of your journey happened, and is happening, for your good.'
+  },
+  {
+    type: 'image',
+    src: 'portfolio/physical/the_surge.jpg',
+    title: 'The Surge',
+    year: '2026',
+    medium: 'Watercolor on canvas paper',
+    dimensions: '9 × 12 in',
+    statement: '<i>The Surge</i> began in 2022 as a portrait of a woman at peace, her expression serene and inward. She was never meant to be in danger, but something simply would not allow her to be. Two years and some sorrows later, the watercolor seeped into the background and a hand emerged from beneath the surface. Two more years and additional sorrows later, a second hand followed and the painting finally became what it had been quietly moving toward. Yet she remains calm at the center of it all—eyes closed, expression soft—while hands rise and reach around her. That dissonance was unintentional, and perhaps more honest for it. A moment of tranquility, interrupted by some disturbance. Feelings that surface from within and forces that press in from without, surging and swelling until they seem to consume you, the boundary between the two long dissolved. How then, do you respond? Fighting a wave only causes you to drown quicker, but a placid surrender allows you to stay afloat. The artist once resonated deeply with this idea of being consumed by feelings and forces that seemed so much greater than her. Now, much like the woman in the painting, she no longer grants her emotions or external circumstances the agency to disturb her peace.'
+  },
+  {
+    type: 'image',
+    src: 'portfolio/physical/tre.jpg',
+    title: 'Tre',
+    year: '2026',
+    medium: 'Watercolor and acrylic on canvas',
+    dimensions: '11 × 14 in',
+    statement: 'The title of this piece functions as a double entendre. <i>Tre</i> is both the Italian word for three, and a name commonly found within the Black community. What began as a sketch and a technical study of overlapping line art, became something else entirely. One black man, fractured across the canvas, his gaze held in three directions simultaneously. Frantz Fanon once said that “a member of a colonised people must be constantly aware of his position, his image; he is being threatened from all sides; impossible to forget for an instant the need to keep up one’s defenses.” This symptomatic hypervigilance causes an unintentional fragmentation of self. The natural result of a marginalized identity shaped under constant surveillance is the compulsory need to constantly perform, constantly suppress, and constantly translate. In this manner we see that code-switching and other politics of respectability aren’t skills, they are generational curses. The underlying question thus becomes, what could we—the descendants of colonized people—be if none of this were necessary? If the circumstances of colonization and imperialism that fractured us had never existed at all, what might have remained whole?'
+  },
 ];
 
 const digitalArt = [
   {
-    type: 'placeholder',
-    title: 'Digital Piece Title',
-    year: '2024',
-    statement: 'Artist statement for this digital piece.'
+    type: 'video',
+    src: 'portfolio/digital/self_portrait_in_motion.mp4',
+    title: 'Born Under the Son',
+    year: '2026',
+    statement: '<i>Born Under the Son</i> is a self-portrait that simutaneously operates as a visual devotional and literary wordplay. The artist is positioned before a luminous solar disc that consciously echoes the halos of Byzantine and Renaissance iconography traditionally reserved for saints and biblical figures. The deep ochre background paying homage to the historic color of imperial royalty. The title operates on two levels at once: “born under the sun” references the Akan name Akosua, meaning one born on a Sunday. While “born under the Son” declares the artist’s identity as a child of God the Father, and a believer of God the Son. The doubling of cultural heritage and divine spirituality refuses any easy separation between the secular and the sacred. The self is not represented here as a physical subject, but as a dignified soul—radiant and situated with an inherited grammar of glory. This specific version is a digital rendering of an 11 x 14 inch acrylic painting on canvas. In the digital animation, the portrait can be seen blinking, as the solar shaped earring illuminates both the artist’s body, and the gold jewel necklace that lays across her bare chest. This second frame further signifies the outward manifestation of an inward celestial state.'
   },
   {
-    type: 'placeholder',
-    title: 'Digital Piece Title',
-    year: '2024',
-    statement: 'Artist statement for your second digital piece.'
+    type: 'video',
+    src: 'portfolio/digital/release.mp4',
+    title: 'Release (First Born Daughter)',
+    year: '2026',
+    statement: ''
   },
   /* Example for animated pieces (mp4):
   {
@@ -129,29 +185,73 @@ const digitalArt = [
 
 const poems = [
   {
-    title: 'Poem Title',
+    title: 'John 14:6',
+    year: '2023',
+    body: `He met me at this fork in the road
+sense of direction was never a strength of mine
+“which path do i take?” i asked
+“choose The way” He answered
+He sat with me at this fork in the road
+
+He met me in the depths of my despair
+overcoming obstacles was never my forte
+“how am i to conquer?” i asked
+“with The truth” He answered
+He sat with me in the depths of my despair
+
+He met me as i laid sick and tired
+taking respite was never my specialty
+“where is my healing?” i asked
+“in The life” He answered
+He sat with me as i laid sick and tired
+
+He met me where i was
+i was weak and He was strong
+... i asked
+... He answered
+He saved me`
+  },
+  {
+    title: 'feelings',
     year: '2024',
-    body: `Your poem text goes here.
-Each line break is preserved.
-
-Add stanza breaks with a blank line.
-Replace this with your actual poem.`
+    body: `they start by your feet
+slowly surging and swelling
+you let them take you`
   },
   {
-    title: 'Another Poem',
-    year: '2023',
-    body: `Second poem text here.
-Line two.
-
-Stanza two.`
+    title: '9',
+    year: '2025',
+    body: `Have you truly lived if you haven’t experienced the full range of human emotion?
+Could you tell me what color they are?
+Can you describe the intensity of each hue?
+If love is pink and anger is red, do these values exist on the same scale?
+Can you stop those colors from mixing?
+Would you tell me if they begin to bleed?
+What if all sensations were merely a half-step from the next?
+Would each chroma strike a chord?
+Or could you only thrum in blue?`
   },
   {
-    title: 'Third Poem',
-    year: '2023',
-    body: `Third poem text.
-Your words.
+    title: 'poiēma',
+    year: '2026',
+    body: `Of greek or latin origin,
+meaning handiwork or something made
+from which we derive poetry and prose
 
-More stanzas.`
+as literary works of linguistic art,
+and an intentional process of creation
+is core to the spiritual being
+
+in communion with the saints,
+altering the furled fabric of reality
+For the inundation of divine authorship`
+  },
+  {
+    title: 'then God spoke to me',
+    year: '2026',
+    body: `there is a thin line
+between delusion and faith
+cross it anyway`
   },
 ];
 
@@ -206,9 +306,9 @@ function initGallery({ stageId, prevId, nextId, indexId, totalId,
       stage.appendChild(vid);
     }
 
-    titleEl.textContent = item.title;
-    yearEl.textContent  = item.year;
-    stmtEl.textContent  = item.statement;
+    titleEl.textContent = `<i>${item.title}</i>, ${item.year}`;
+    yearEl.textContent = item.medium ? `${item.medium}, ${item.dimensions}` : '';
+    stmtEl.innerHTML = item.statement;
     indexEl.textContent = current + 1;
 
     prevBtn.disabled = current === 0;
@@ -238,7 +338,7 @@ function initGallery({ stageId, prevId, nextId, indexId, totalId,
   /* Plaque click — expand statement (simple toggle) */
   if (plaque) {
     plaque.addEventListener('click', () => {
-      stmtEl.style.webkitLineClamp = stmtEl.style.webkitLineClamp ? '' : '3';
+      plaque.classList.toggle('zoomed');
     });
   }
 
