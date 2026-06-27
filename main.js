@@ -170,7 +170,8 @@ const digitalArt = [
     src: 'portfolio/digital/release.mp4',
     title: 'Release (First Born Daughter)',
     year: '2026',
-    statement: ''
+    statement: 'Release is a meditation on surrender and the sacred act of returning to oneself after carrying something that was never meant to be held. The alternate title, First Born Daughter, speaks to the familiar experience within many families of color where the eldest daughter becomes a substitute caregiver—expected to nurture, protect, and sustain others before fully understanding herself. Here, she rests in stillness, surrounded by waves of color emanating from her crown and root chakras. Blockages in these energetic areas can be spurred by unresolved trauma, chronic stress, fear of failure, rigid belief systems, and prioritizing endurance through struggle. All of which are symptoms of early adultification. These waves represent the many things being released: inherited expectations, projections of others, societal ideals, and the invisible labor attached to womanhood. The weight of being useful often becomes intertwined with identity, leaving little room to exist beyond service. Through this release, she is reclaiming her wholeness beyond this responsibility. The work honors the interior lives of Black women and women of color, asking what remains when we are finally allowed to exist outside of what we can provide.
+'
   },
   /* Example for animated pieces (mp4):
   {
@@ -306,7 +307,7 @@ function initGallery({ stageId, prevId, nextId, indexId, totalId,
       stage.appendChild(vid);
     }
 
-    titleEl.textContent = `<i>${item.title}</i>, ${item.year}`;
+    titleEl.innerHTML = `<i>${item.title}</i>, ${item.year}`;
     yearEl.textContent = item.medium ? `${item.medium}, ${item.dimensions}` : '';
     stmtEl.innerHTML = item.statement;
     indexEl.textContent = current + 1;
