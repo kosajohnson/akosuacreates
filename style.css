@@ -432,9 +432,16 @@ html, body {
   max-width: 480px;
   width: 100%;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 16px;
-  text-align: center;
+  text-align: left;
+}
+
+.plaque.zoomed {
+  transform: scale(1.5);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+  z-index: 10;
+  position: relative;
 }
 
 .plaque:hover { background: #e8d9a8; }
@@ -461,6 +468,8 @@ html, body {
   font-size: 0.9rem;
   color: #6b5530;
   line-height: 1.6;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .gallery-counter {
