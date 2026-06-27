@@ -1,0 +1,562 @@
+/* ============================================================
+   AKOSUA CREATES — style.css
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #F5F3EE;
+  --white:      #FFFFFF;
+  --ink:        #1A1A1A;
+  --muted:      #7A7268;
+  --border:     rgba(26,26,26,0.1);
+  --gold:       #B89B5E;
+  --gold-light: #F0E6CB;
+  --terra:      #9B5A3C;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  overflow-x: hidden;
+}
+
+/* ── Pages ── */
+.page { display: none; min-height: 100vh; }
+.page.active { display: block; animation: fadeUp 0.35s ease; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Hamburger ── */
+#menu-btn {
+  position: fixed;
+  top: 20px; left: 20px;
+  z-index: 1000;
+  background: rgba(245,243,238,0.85);
+  backdrop-filter: blur(6px);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#menu-btn span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+#menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+#menu-btn.open span:nth-child(2) { opacity: 0; }
+#menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── Drawer ── */
+#nav-drawer {
+  position: fixed;
+  top: 0; left: -280px;
+  width: 260px; height: 100vh;
+  background: var(--white);
+  border-right: 1px solid var(--border);
+  z-index: 999;
+  padding: 72px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: left 0.32s cubic-bezier(0.4,0,0.2,1);
+}
+
+#nav-drawer.open { left: 0; }
+
+.drawer-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--gold);
+  margin-bottom: 24px;
+  letter-spacing: 0.02em;
+}
+
+#nav-drawer a {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.04em;
+  transition: color 0.2s, padding-left 0.2s;
+}
+
+#nav-drawer a:hover { color: var(--terra); padding-left: 6px; }
+
+#nav-drawer .drawer-sub {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: default;
+  pointer-events: none;
+  padding-top: 20px;
+  border-bottom: none;
+}
+
+#nav-drawer .drawer-indent {
+  padding-left: 16px;
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+
+#overlay {
+  position: fixed; inset: 0;
+  background: rgba(26,26,26,0.2);
+  z-index: 998;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s;
+}
+#overlay.visible { opacity: 1; pointer-events: all; }
+
+/* ── Back button ── */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0;
+  margin-bottom: 40px;
+  transition: color 0.2s;
+}
+.back-btn:hover { color: var(--terra); }
+
+/* ============================================================
+   HOME PAGE
+   ============================================================ */
+#page-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 20px;
+}
+
+.home-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  border-radius: 4px;
+}
+
+/* ── Hotspots ── */
+.hotspot {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.18s;
+}
+
+.hotspot:hover,
+.hotspot:focus {
+  background: rgba(155,90,60,0.1);
+  outline: none;
+}
+
+.hs-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  padding: 5px 11px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s;
+}
+
+.hotspot:hover .hs-tooltip,
+.hotspot:focus .hs-tooltip { opacity: 1; }
+
+/*
+  Hotspot positions — percentages of the image container.
+  The image is 1456×816 px (16:9).
+  Easel/canvas:   left ~5–30%,  top ~10–80%
+  Title text:     left ~45–95%, top ~5–45%
+  Sketchbook:     left ~57–67%, top ~47–68%  (purple sketchbook on table)
+  Drawing tablet: left ~67–82%, top ~47–68%  (black tablet on table)
+*/
+#hs-canvas  { left: 5%;  top: 10%; width: 26%; height: 72%; }
+#hs-title   { left: 45%; top: 4%;  width: 50%; height: 42%; }
+#hs-journal { left: 56%; top: 46%; width: 14%; height: 24%; }
+#hs-tablet  { left: 68%; top: 46%; width: 17%; height: 24%; }
+
+/* ============================================================
+   INNER PAGES — shared
+   ============================================================ */
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 40px 80px;
+}
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+.about-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .about-layout { grid-template-columns: 1fr; gap: 36px; }
+  .inner { padding: 72px 24px 60px; }
+}
+
+.portrait-wrap { position: relative; }
+
+.portrait-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  /* When you have your headshot, remove this div and use:
+     <img src="headshot.jpg" alt="Akosua Johnson"
+          style="width:100%;border-radius:4px;" /> */
+}
+
+.portrait-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.about-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.about-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+
+.bio-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+
+/* ── Social links ── */
+.keep-up { margin-top: 36px; }
+
+.keep-up-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  background: var(--white);
+}
+
+.social-link:hover {
+  border-color: var(--terra);
+  color: var(--terra);
+  background: rgba(155,90,60,0.04);
+}
+
+.link-name { font-weight: 500; }
+.link-sub  { margin-left: auto; font-size: 0.72rem; color: var(--muted); }
+.social-link:hover .link-sub { color: var(--terra); }
+
+/* ============================================================
+   GALLERY PAGES (Physical & Digital Art)
+   ============================================================ */
+.gallery-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 32px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  align-self: flex-start;
+  margin-bottom: 36px;
+}
+
+/* ── Viewer ── */
+.gallery-viewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.artwork-stage {
+  flex: 1;
+  max-width: 680px;
+  min-height: 420px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.artwork-stage img,
+.artwork-stage video {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.artwork-stage:hover img,
+.artwork-stage:hover video { transform: scale(1.015); }
+
+.artwork-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px;
+}
+
+/* ── Arrows ── */
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 12px 8px;
+  transition: color 0.2s, transform 0.15s;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.arrow-btn:hover { color: var(--ink); transform: scale(1.15); }
+.arrow-btn:disabled { opacity: 0.2; cursor: default; transform: none; }
+
+/* ── Plaque ── */
+.plaque {
+  background: var(--gold-light);
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  padding: 16px 22px;
+  max-width: 480px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.plaque:hover { background: #e8d9a8; }
+
+.plaque-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #5a4a28;
+  margin-bottom: 2px;
+}
+
+.plaque-year {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  color: #8a7040;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.plaque-stmt {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  color: #6b5530;
+  line-height: 1.6;
+}
+
+.gallery-counter {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+/* ── Lightbox ── */
+.lightbox {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(10,10,10,0.92);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.open { display: flex; }
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px; right: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 1; }
+
+/* ============================================================
+   POETRY PAGE
+   ============================================================ */
+.poetry-viewer {
+  align-items: flex-start;
+}
+
+.poem-stage {
+  flex: 1;
+  max-width: 620px;
+  min-height: 360px;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.poem-title-display {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.poem-year-display {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 36px;
+}
+
+.poem-body {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--ink);
+  white-space: pre-line;
+  text-align: center;
+  max-width: 480px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 600px) {
+  .gallery-viewer { gap: 8px; }
+  .arrow-btn { font-size: 1.4rem; padding: 8px 4px; }
+  .artwork-stage { min-height: 260px; }
+  .poem-stage { padding: 12px 4px; }
+  .gallery-page { padding: 72px 16px 48px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, .page { animation: none !important; transition: none !important; }
+}
