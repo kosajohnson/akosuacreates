@@ -168,20 +168,17 @@ const digitalArt = [
   {
     type: 'video',
     src: 'portfolio/digital/release.mp4',
-    title: 'Release (First Born Daughter)',
+    title: 'Release (Eldest Daughter)',
     year: '2026',
-    statement: 'Release is a meditation on surrender and the sacred act of returning to oneself after carrying something that was never meant to be held. The alternate title, First Born Daughter, speaks to the familiar experience within many families of color where the eldest daughter becomes a substitute caregiver—expected to nurture, protect, and sustain others before fully understanding herself. Here, she rests in stillness, surrounded by waves of color emanating from her crown and root chakras. Blockages in these energetic areas can be spurred by unresolved trauma, chronic stress, fear of failure, rigid belief systems, and prioritizing endurance through struggle. All of which are symptoms of early adultification. These waves represent the many things being released: inherited expectations, projections of others, societal ideals, and the invisible labor attached to womanhood. The weight of being useful often becomes intertwined with identity, leaving little room to exist beyond service. Through this release, she is reclaiming her wholeness beyond this responsibility. The work honors the interior lives of Black women and women of color, asking what remains when we are finally allowed to exist outside of what we can provide.
-'
+    statement: '<i>Release</i> is a meditation on surrender and the sacred act of returning to oneself after carrying something that was never meant to be held. The alternate title, <i>Eldest Daughter</i>, speaks to the familiar experience within many families of color where the first born daughter becomes a substitute caregiver—expected to nurture, protect, and sustain the needs of others before fully understanding her own. Here, she rests in stillness, surrounded by waves of color emanating from her crown and root chakras. Blockages in these energetic areas can be spurred by unresolved trauma, chronic stress, fear of failure, rigid belief systems, and prioritizing endurance through struggle. All of which are symptoms of early adultification. These waves represent the many things being released: inherited expectations, misplaced projections, societal ideals, and the invisible labor attached to womanhood. The weight of being useful often becomes intertwined with identity, leaving little room to exist beyond service. Through this release, she is reclaiming her wholeness beyond this responsibility. The work honors the interior lives of Black women and women of color, asking what remains when we are finally allowed to exist outside of what we can provide.'
   },
-  /* Example for animated pieces (mp4):
   {
     type: 'video',
-    src: 'art/animation1.mp4',
-    title: 'Animated Study',
-    year: '2024',
+    src: 'portfolio/digital/used_and_discarded.mp4',
+    title: 'Used and Discarded',
+    year: '2026',
     statement: 'This animation explores...'
   },
-  */
 ];
 
 const poems = [
@@ -191,19 +188,19 @@ const poems = [
     body: `He met me at this fork in the road
 sense of direction was never a strength of mine
 “which path do i take?” i asked
-“choose The way” He answered
+“choose The way,” He answered
 He sat with me at this fork in the road
 
 He met me in the depths of my despair
 overcoming obstacles was never my forte
 “how am i to conquer?” i asked
-“with The truth” He answered
+“with The truth,” He answered
 He sat with me in the depths of my despair
 
 He met me as i laid sick and tired
 taking respite was never my specialty
 “where is my healing?” i asked
-“in The life” He answered
+“in The life,” He answered
 He sat with me as i laid sick and tired
 
 He met me where i was
