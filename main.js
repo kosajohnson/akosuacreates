@@ -160,7 +160,7 @@ const physicalArt = [
 const digitalArt = [
   {
     type: 'video',
-    src: 'portfolio/digital/self_portrait_in_motion.mp4',
+    src: 'portfolio/digital/born_under_the_son.mp4',
     title: 'Born Under the Son',
     year: '2026',
     statement: '<i>Born Under the Son</i> is a self-portrait that simutaneously operates as a visual devotional and literary wordplay. The artist is positioned before a luminous solar disc that consciously echoes the halos of Byzantine and Renaissance iconography traditionally reserved for saints and biblical figures. The deep ochre background paying homage to the historic color of imperial royalty. The title operates on two levels at once: “born under the sun” references the Akan name Akosua, meaning one born on a Sunday. While “born under the Son” declares the artist’s identity as a child of God the Father, and a believer of God the Son. The doubling of cultural heritage and divine spirituality refuses any easy separation between the secular and the sacred. The self is not represented here as a physical subject, but as a dignified soul—radiant and situated with an inherited grammar of glory. This specific version is a digital rendering of an 11 x 14 inch acrylic painting on canvas. In the digital animation, the portrait can be seen blinking, as the solar shaped earring illuminates both the artist’s body, and the gold jewel necklace that lays across her bare chest. This second frame further signifies the outward manifestation of an inward celestial state.'
@@ -177,7 +177,7 @@ const digitalArt = [
     src: 'portfolio/digital/used_and_discarded.mp4',
     title: 'Used and Discarded',
     year: '2026',
-    statement: 'This animation explores...'
+    statement: '<i>Used and Discarded</i> is a commentary on twenty-first century relationships. In an era where boundary-setting and mental health breaks have become cultural currency, leaving has never been easier or more socially sanctioned. We have grown accustomed to exiting at the first sign of friction, not recognizing that healthy friction is a natural part of growth, and that inconvenience is often the price of close relationships. We want friends and community without accountability. “We are collectors of people and places. We fill in blank spaces with experiences that shape us. Learning and growing, then withdrawing and ghosting...” In this animated piece, we see a man’s fragmented body suspended by strings, being pulled in various directions by someone unseen. His head rests on the floor—detached, untethered, still operating on his own volition. Although his mind and emotions are the only extremities free of manipulation, there exists a quiet, pervasive logic that dictates that his submission might be mistaken for devotion, and that allowing himself to be puppeteered might make someone stay. Yet he knows that it doesn’t work that way. So he waits, hoping to find a sense of closure in their absence.'
   },
 ];
 
