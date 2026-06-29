@@ -81,7 +81,7 @@ const physicalArt = [
     year: '2018',
     medium: 'Graphite, charcoal, color pencil, chalk pastel, oil pastel, and acrylic on drawing paper',
     dimensions: '9 × 9.5 in',
-    statement: '<i>Untitled and Unfinished</i> began as a realistic portrait of British singer and songwriter FKA Twigs, realistically rendered in graphite and charcoal from a photograph by David Burton. Drawn to her otherworldly aesthetic and the visual power of the reference image, the work was conceived as an exercise in likeness. The single Phalaenopsis orchid, rendered in color pencil, served as the sole departure from an otherwise monochromatic composition. That is until the piece turned into a study of color and medium, in which the artist opted for a vivid blue chalk pastel to serve as the background. Purple and pink chalk pastel were dusted onto her cheeks as blush to match the orchid in hand. White acrylic paint and oil pastel were used to add highlights on the flower and the subject, respectively. Yet the piece remained incomplete. The undrawn braid and unfinished ponytail became details deferred, and eventually released. Years later, rather than returning to finish what was left, yellow chalk pastel was added to the open, unrendered areas of the composition, allowing the work to feel whole without pretending to be complete.'
+    statement: '<i>Untitled and Unfinished</i> began as a realistic portrait of British singer and songwriter FKA Twigs, realistically rendered in graphite and charcoal from a photograph by David Burton. Drawn to her otherworldly aesthetic and the visual power of the reference image, the work was conceived as an exercise in likeness. The single Phalaenopsis orchid, rendered in color pencil, served as the sole departure from an otherwise monochromatic composition. That is until the piece turned into a study of color and medium, in which the artist opted for a vivid blue chalk pastel to serve as the background. Purple and pink chalk pastel were dusted onto her cheeks as blush to match the orchid in hand. White acrylic paint and oil pastel were used to add highlights on the flower and the subject, respectively. Yet the piece remained incomplete. The undrawn braid and unfinished ponytail became details deferred, and eventually released. Rather than returning to finish what was left, yellow chalk pastel was added to the open, unrendered areas of the composition, allowing the work to feel whole without pretending to be complete.'
   },
   {
     type: 'image',
@@ -177,7 +177,7 @@ const digitalArt = [
     src: 'portfolio/digital/used_and_discarded.mp4',
     title: 'Used and Discarded',
     year: '2026',
-    statement: '<i>Used and Discarded</i> is a commentary on twenty-first century relationships. In an era where boundary-setting and mental health breaks have become cultural currency, leaving has never been easier or more socially sanctioned. We have grown accustomed to exiting at the first sign of friction, not recognizing that healthy friction is a natural part of growth, and that inconvenience is often the price of close relationships. We want friends and community without accountability. “We are collectors of people and places. We fill in blank spaces with experiences that shape us. Learning and growing, then withdrawing and ghosting...” In this animated piece, we see a man’s fragmented body suspended by strings, being pulled in various directions by someone unseen. His head rests on the floor—detached, untethered, still operating on his own volition. Although his mind and emotions are the only extremities free of manipulation, there exists a quiet, pervasive logic that dictates that his submission might be mistaken for devotion, and that allowing himself to be puppeteered might make someone stay. Yet he knows that it doesn’t work that way. So he waits, hoping to find a sense of closure in their absence.'
+    statement: '<i>Used and Discarded</i> is a commentary on twenty-first century relationships. In an era where boundary-setting and mental health breaks have become cultural currency, leaving has never been easier or more socially sanctioned. We have grown accustomed to exiting at the first sign of friction, not recognizing that healthy friction is a natural part of growth, and that inconvenience is often the price of close relationships. We want friends and community without accountability. “We are collectors of people and places. We fill in blank spaces with experiences that shape us. Learning and growing, then withdrawing and ghosting...” In this animated piece, we see a man’s fragmented body suspended by strings, being pulled in various directions by someone unseen. His head rests on the floor—detached, untethered, still operating on his own volition. Although his mind and emotions are the only extremities free of manipulation, there exists a quiet, pervasive logic that dictates that his submission might be mistaken for devotion. Or that allowing himself to be puppeteered might make someone stay. Yet he knows that it doesn’t work that way. So he waits, hoping to find a sense of closure in their absence.'
   },
 ];
 
@@ -187,13 +187,13 @@ const poems = [
     year: '2023',
     body: `He met me at this fork in the road
 sense of direction was never a strength of mine
-“which path do i take?” i asked
+“which route do i take?” i asked
 “choose The way,” He answered
 He sat with me at this fork in the road
 
 He met me in the depths of my despair
 overcoming obstacles was never my forte
-“how am i to conquer?” i asked
+“how will i prevail?” i asked
 “with The truth,” He answered
 He sat with me in the depths of my despair
 
@@ -232,15 +232,15 @@ Or could you only thrum in blue?`
   {
     title: 'poiēma',
     year: '2026',
-    body: `Of greek or latin origin,
+    body: `Of greek or latin origin
 meaning handiwork or something made
 from which we derive poetry and prose
 
-as literary works of linguistic art,
-and an intentional process of creation
-is core to the spiritual being
+is core to the spiritual being 
+the literary work of linguistic art
+is an intentional process of creation 
 
-in communion with the saints,
+in communion with the saints
 altering the furled fabric of reality
 For the inundation of divine authorship`
   },
