@@ -7,7 +7,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:         #F5F3EE;
+  --bg:         #FFFFFF;
   --white:      #FFFFFF;
   --ink:        #1A1A1A;
   --muted:      #7A7268;
@@ -26,7 +26,7 @@ html, body {
 }
 
 /* ── Pages ── */
-.page { display: none; min-height: 100vh; }
+.page { display: none; min-height: 100vh; overflow: hidden; }
 .page.active { display: block; animation: fadeUp 0.35s ease; }
 
 @keyframes fadeUp {
@@ -152,12 +152,15 @@ html, body {
    HOME PAGE
    ============================================================ */
 #page-home {
-  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: var(--bg);
   padding: 20px;
+}
+
+#page-home.active {
+  display: flex;
 }
 
 .home-wrap {
@@ -371,12 +374,6 @@ html, body {
 }
 
 .artwork-stage {
-  flex: 1;
-  max-width: 680px;
-  min-height: 420px;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,9 +384,8 @@ html, body {
 
 .artwork-stage img,
 .artwork-stage video {
-  max-width: 100%;
-  max-height: 500px;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
   display: block;
   transition: transform 0.3s;
 }
