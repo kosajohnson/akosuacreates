@@ -250,7 +250,7 @@ html, body {
   width: 100%;
   aspect-ratio: 3/4;
   background: var(--white);
-  border: 1px solid var(--border);
+  border: 2px solid var(--ink);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -449,7 +449,8 @@ html, body {
 .plaque-year {
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.7rem;
-  color: var(--muted);
+  font-style: italic;
+  color: var(--ink);
   letter-spacing: 0.08em;
   margin-bottom: 8px;
 }
