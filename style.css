@@ -166,7 +166,7 @@ html, body {
 .home-wrap {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
 }
 
 .hero-img {
@@ -214,16 +214,16 @@ html, body {
 
 /*
   Hotspot positions — percentages of the image container.
-  The image is 1456×816 px (16:9).
+  The image is 1920×1080 px.
   Easel/canvas:   left ~5–30%,  top ~10–80%
   Title text:     left ~45–95%, top ~5–45%
   Sketchbook:     left ~57–67%, top ~47–68%  (purple sketchbook on table)
   Drawing tablet: left ~67–82%, top ~47–68%  (black tablet on table)
 */
-#hs-canvas  { left: 5%;  top: 10%; width: 26%; height: 72%; }
-#hs-title   { left: 45%; top: 4%;  width: 50%; height: 42%; }
-#hs-journal { left: 56%; top: 46%; width: 14%; height: 24%; }
-#hs-tablet  { left: 68%; top: 46%; width: 17%; height: 24%; }
+#hs-canvas  { left: 10%;  top: 12%; width: 22%; height: 70%; }
+#hs-title   { left: 40%; top: 4%;  width: 50%; height: 42%; }
+#hs-journal { left: 56%; top: 52%; width: 14%; height: 22%; }
+#hs-tablet  { left: 70%; top: 54%; width: 16%; height: 22%; }
 
 /* ============================================================
    INNER PAGES — shared
