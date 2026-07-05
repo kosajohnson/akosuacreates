@@ -156,7 +156,7 @@ html, body {
   justify-content: center;
   min-height: 100vh;
   background: var(--bg);
-  padding: 20px;
+  overflow: hidden;
 }
 
 #page-home.active {
@@ -166,7 +166,7 @@ html, body {
 .home-wrap {
   position: relative;
   width: 100%;
-  max-width: 1100px;
+  height: 100vh;
 }
 
 .hero-img {
@@ -174,7 +174,6 @@ html, body {
   height: auto;
   display: block;
   user-select: none;
-  border-radius: 4px;
 }
 
 /* ── Hotspots ── */
