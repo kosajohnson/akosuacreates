@@ -151,27 +151,24 @@ html, body {
 /* ============================================================
    HOME PAGE
    ============================================================ */
-#page-home {
-  align-items: center;
-  justify-content: center;
-  background: var(--bg);
-  overflow: hidden;
-}
-
 #page-home.active {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background: #FFFFFF;
+  overflow: hidden;
 }
 
 .home-wrap {
   position: relative;
-  width: 100%;
   height: 100dvh;
 }
 
 .hero-img {
-  width: auto;
   height: 100%;
-  object-fit: contain;
+  width: auto;
+  max-width: 100%;
   display: block;
   user-select: none;
 }
