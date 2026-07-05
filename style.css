@@ -154,7 +154,6 @@ html, body {
 #page-home {
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   background: var(--bg);
   overflow: hidden;
 }
@@ -166,13 +165,13 @@ html, body {
 .home-wrap {
   position: relative;
   width: 100%;
-  height: 100svh;
+  height: 100dvh;
 }
 
 .hero-img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   user-select: none;
 }
