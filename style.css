@@ -156,19 +156,18 @@ html, body {
   align-items: center;
   justify-content: center;
   min-height: 100dvh;
+  min-width: 100vw;
   background: #FFFFFF;
   overflow: hidden;
 }
 
 .home-wrap {
   position: relative;
-  height: 100dvh;
 }
 
 .hero-img {
   height: 100%;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   display: block;
   user-select: none;
 }
