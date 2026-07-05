@@ -117,7 +117,7 @@ const physicalArt = [
     year: '2025',
     medium: 'Acrylic on canvas',
     dimensions: '5 × 7 in',
-    statement: '<i>BANG!</i>, for short, began as a formal paint study before surrendering to its own subject matter. Appropriating the visual language of exploitation cinema—specifically the violently hypersexualized aesthetic that defines much of Quentin Tarantino’s filmography—the work condenses that tradition into a more intimate field of view. The inverted contextual onomatopoeia, the matching bullet and seductive passenger, the disembodied hand reaching into the disembodied vulva, the siren licking the lollipop enticingly, and the vague hanged man all function as cinematic stills collapsed into a single frame. The viewer is engrossed in the voyeuristic nature that the genre both offers and critiques. At miniature scale, the grandiosity of exploitation is made absurd, and its graphic lewdness operates as compositional choice rather than necessity.'
+    statement: '<i>BANG!</i>, for short, began as a formal paint study before surrendering to its own subject matter. Appropriating the visual language of exploitation cinema—specifically the violently hypersexualized aesthetic that defines much of Quentin Tarantino’s filmography—the work condenses that tradition into a more intimate field of view. The inverted contextual onomatopoeia, the bullet and its siren passenger, the disembodied hand reaching into the disembodied vulva, the woman seductively licking the lollipop, and the vague hanged man all function as cinematic stills collapsed into a single frame. The viewer is engrossed in the voyeuristic nature that the genre both offers and critiques. At miniature scale, the grandiosity of exploitation is made absurd, and its graphic lewdness operates as compositional choice rather than necessity.'
   },
   {
     type: 'image',
@@ -126,7 +126,7 @@ const physicalArt = [
     year: '2025',
     medium: 'Acrylic on canvas',
     dimensions: '16 × 20 in',
-    statement: '<i>9</i> is a figurative address of an imaginary rowhome rendered with architectural precision and narrative density—the brick facade acting as an overlaying surface to the complexity found inside. It belongs to Baltimore Ave, Maryland 21222, a multi-sensory series documenting life in a historically Black neighborhood through interconnected paintings, poems, and projected sound installation. Each panel in the series functions as a different viewpoint of the block—domestic windows transform into frames-within-frames, showcasing miniature worlds. The characters in this frame are a man sitting somberly on a porch with his guitar, and a woman peering longingly at him from the window of that same home. The golden house light glows upon the man, somehow casting him in a blue light. Through the window of the home next door, you can see a kitchen with its checkered backsplash and matching clock, dark wood cabinets, and dated white refrigerator. Looking closely at the refrigerator door, you can see a ripped family portrait, a downturned smiley face sticker, and magnets that spell “# … DAD”. Each of these details unfurls the tangled visual narrative of a broken home with our sad guitarist, and his neighboring mistress, at the helm. The accompanying song, “Inner City Blues” by Marvin Gaye, and the eponymous, nine-verse poem below finalize the threshold crossing between interior life and neighborhood space.'
+    statement: '<i>9</i> is a figurative address of an imaginary rowhome rendered with architectural precision and narrative density. The brick facade acts as an overlaying surface to the complexity found inside. This piece belongs to Baltimore Ave, Maryland 21222, a multi-sensory series documenting life in a historically Black neighborhood through interconnected paintings, poems, and projected sound installation. Each panel in the series functions as a different viewpoint of the block—domestic windows transform into frames-within-frames, showcasing miniature worlds. The characters in this frame are a man sitting somberly on a porch with his guitar, and a woman peering longingly at him from the window of that same home. The golden house light glows upon the man, somehow casting him in a blue light. Through the window of the home next door, you can see a kitchen with its checkered backsplash and matching clock, dark wood cabinets, and dated white refrigerator. Looking closely at the refrigerator door, you can see a ripped family portrait, a downturned smiley face sticker, and magnets that spell “# … DAD”. Each of these details unfurls the tangled visual narrative of a broken home with our sad guitarist, and his neighboring mistress, at the helm. The accompanying song, “Inner City Blues” by Marvin Gaye, and the eponymous, nine-verse poem finalize the threshold crossing between interior life and neighborhood space.'
   },
   {
     type: 'image',
@@ -153,7 +153,7 @@ const physicalArt = [
     year: '2026',
     medium: 'Watercolor and acrylic on canvas',
     dimensions: '11 × 14 in',
-    statement: 'The title of this piece functions as a double entendre. <i>Tre</i> is both the Italian word for three, and a name commonly found within the Black community. What began as a sketch and a technical study of overlapping line art, became something else entirely. One black man, fractured across the canvas, his gaze held in three directions simultaneously. Frantz Fanon once said that “a member of a colonised people must be constantly aware of his position, his image; he is being threatened from all sides; impossible to forget for an instant the need to keep up one’s defenses.” This symptomatic hypervigilance causes an unintentional fragmentation of self. The natural result of a marginalized identity shaped under constant surveillance is the compulsory need to constantly perform, constantly suppress, and constantly translate. In this manner we see that code-switching and other politics of respectability aren’t skills, they are generational curses. The underlying question thus becomes, what could we—the descendants of colonized people—be if none of this were necessary? If the circumstances of colonization and imperialism that fractured us had never existed at all, what might have remained whole?'
+    statement: 'The title of this piece functions as a double entendre. <i>Tre</i> is both the Italian word for three, and a name commonly found within the Black community. What began as a sketch and a technical study of overlapping line art, became something else entirely. One black man, fractured across the canvas, his gaze held in three directions simultaneously. Frantz Fanon once said, “a member of a colonised people must be constantly aware of his position, his image; he is being threatened from all sides; impossible to forget for an instant the need to keep up one’s defenses.” This symptomatic hypervigilance causes an unintentional fragmentation of self. The natural result of a marginalized identity shaped under constant surveillance is the compulsory need to constantly perform, constantly suppress, and constantly translate. In this manner we see that code-switching and other politics of respectability aren’t skills, they are generational curses. The underlying question thus becomes, what could we—the descendants of colonized people—be if none of this were necessary? If the circumstances of colonization and imperialism that fractured us had never existed at all, what might have remained whole?'
   },
 ];
 
@@ -213,8 +213,10 @@ He saved me`
     title: 'feelings',
     year: '2024',
     body: `they start by your feet
+you sense the building waves
 slowly surging and swelling
-you let them take you`
+awaiting your arrest
+they want you to drown`
   },
   {
     title: '9',
@@ -230,15 +232,15 @@ Would each chroma strike a chord?
 Or could you only thrum in blue?`
   },
   {
-    title: 'poiēma',
+    title: 'poiēma (a palindrome)',
     year: '2026',
     body: `Of greek or latin origin
 meaning handiwork or something made
 from which we derive poetry and prose
 
-is core to the spiritual being 
 the literary work of linguistic art
-is an intentional process of creation 
+is core to the spiritual being 
+an intentional process of creation 
 
 in communion with the saints
 altering the furled fabric of reality
