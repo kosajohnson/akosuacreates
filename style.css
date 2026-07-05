@@ -153,7 +153,7 @@ html, body {
    ============================================================ */
 #page-home.active {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   min-height: 100dvh;
   min-width: 100vw;
@@ -561,4 +561,12 @@ html, body {
 
 @media (prefers-reduced-motion: reduce) {
   *, .page { animation: none !important; transition: none !important; }
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    content: url('images/akosua_homepage_mobile.png');
+    width: 100%;
+    height: auto;
+  }
 }
